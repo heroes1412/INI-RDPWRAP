@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync upstream changes
-        run: gh repo sync ${{ github.repository }} -b main
+        run: gh repo sync ${{ github.repository }} -b master
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
