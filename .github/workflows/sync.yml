@@ -2,7 +2,7 @@ name: Sync Fork with Upstream
 
 on:
   schedule:
-    - cron: '30 5 * * *' # Chạy tự động mỗi ngày
+    - cron: '30 5 */3 * *'
   workflow_dispatch: # Bấm chạy thủ công
 
 permissions:
